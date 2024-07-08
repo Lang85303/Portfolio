@@ -1,11 +1,9 @@
+*{
+    box-sizing: border-box;
+}
 body{
     background-color: hsl(0, 0%, 10%);
     color: hsl(26, 100%, 90%);
-    margin: 0;
-}
-main{
-    margin-left: 50px;
-    margin-right: 50px;
 }
 h1{
     text-align: center;
@@ -34,4 +32,11 @@ h1{
 }
 .navbar li{
     float: left;
+}
+#projects{
+    background-color: hsl(0, 0%, 35%);
+    border: 3px solid black;
+    border-radius: 25px;
+    width: 50%;
+    margin: 30px;
 }
