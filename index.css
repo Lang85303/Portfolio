@@ -5,33 +5,20 @@ body{
     background-color: hsl(0, 0%, 10%);
     color: hsl(26, 100%, 90%);
     margin: 0;
-    padding-top: 190px;/* Prevent content from being hidden under fixed header and navbar
-                            adjust padding as needed*/
 }
-header{
-    position: fixed;
+#container-top{
     background-color: hsl(0, 0%, 20%);
+    position: sticky;
     top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000; /* Ensure it stays on top of other elements */
-    padding: 20px 0; /* Adjust padding as needed */
-    padding-bottom: 0;
+    padding: 8px;
 }
 h1{
     text-align: center;
     font-size: 4em;
     margin: 0;
 }
-.navbar{
-    position: fixed;
-    background-color: hsl(0, 0%, 20%);
-    top: 82px; /* Adjust based on header height */
-    left: 0;
-    width: 100%;
-    z-index: 999; /* Slightly lower than header to avoid overlap */
-}
 .navbar ul{
+    margin-top: 0;
     background-color: hsl(0, 83%, 24%);
     list-style-type: none;
     padding: 0px;
@@ -61,13 +48,12 @@ h1{
     margin: 30px auto;
     width: calc(100% - 60px);
     height: 1000px;
-
 }
 #past-projects{
     font-size: 3em;
     margin: 0;
 }
-.container{
+.container-project{
     display: flex;
     flex-direction: column;
     justify-content: center;
