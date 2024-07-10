@@ -10,7 +10,8 @@ body{
     background-color: hsl(0, 0%, 20%);
     position: sticky;
     top: 0;
-    padding: 8px;
+    padding-bottom: 5px;
+    z-index: 1000;
 }
 h1{
     text-align: center;
@@ -18,7 +19,8 @@ h1{
     margin: 0;
 }
 .navbar ul{
-    margin-top: 3;
+    margin-top: 5px;
+    margin-bottom: 5px;
     background-color: hsl(0, 100%, 10%);
     list-style-type: none;
     padding: 0px;
@@ -63,9 +65,35 @@ h1{
     height: 1000px;
     padding: 10px;
 }
-img{
-    height: 50%;
+.gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 50%;
-    padding: 10px;
     float: left;
+
+}
+.projectimg{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 25px;
+}
+.projectimg:hover{
+    padding: 0px;
+}
+.hover-label{
+    position: absolute;
+    z-index: 999;
+    background-color: hsl(0, 0%, 70%);
+    color: hsl(0, 0%, 0%);
+    padding: 5px;
+    border-radius: 3px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s, visibility 0.2s;
+}
+.gallery:hover .hover-label{
+    opacity: 1;
+    visibility: visible;
 }
