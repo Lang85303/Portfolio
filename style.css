@@ -22,10 +22,21 @@ body{
     justify-content: space-between;
     align-items: center;
 }
+@media screen and (max-width:600px){
+    #container-top{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
 h1{
     text-align: center;
     font-size: 3em;
     margin-left: 30px;
+}
+@media screen and (max-width:600px){
+    h1{
+        margin: 0px;
+    }
 }
 .navbar{
     margin-right: 20px;
@@ -38,6 +49,7 @@ h1{
     overflow: hidden;
     border-radius: 25px;
     display: flex;
+    white-space: nowrap;
 }
 .navbar li{
     margin: 0;
@@ -46,13 +58,13 @@ h1{
     color: hsl(26, 100%, 90%);
     text-decoration: none;
     padding: 15px;
-    display: block;
+    display: flex;
+    flex-wrap: nowrap;
     text-align: center;
 }
 .navbar a:hover{
     background-color: hsl(0, 0%, 30%);
 }
-
 #container-bottom{
     background-color: hsl(0, 0%, 10%);
     position: sticky;
@@ -65,8 +77,44 @@ h1{
 /* HOME */
 
 #cartooncomputer{
-    width: 200px;
-    height: 200px;
+    width: 325px;
+    height: 325px;
+    margin-left: 100px;
+    margin-right: 50px;
+}
+#intro-container{
+    display: flex;
+    padding: 50px;
+}
+@media screen and (max-width:1000px){
+    #intro-container{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:1000px){
+    #cartooncomputer{
+        margin-top: 50px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+#paragraph-container{
+    flex-wrap: wrap;
+}
+#paragraph-title{
+    font-size: 3.5em;
+    margin-bottom: 25px;
+}
+#paragraph{
+    font-size: 1.5em;
+    padding-top: 25px;
+}
+
+#link{
+    display: none;
+    visibility: none;
+    pointer-events: none;
 }
 
 /* PAST PROJECTS */
