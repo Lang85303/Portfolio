@@ -134,6 +134,9 @@ h1{
 #aboutme-container .paragraph-title{
     text-align: right;
 }
+#all-port-preview{
+    padding-right: 0;
+}
 #portfolio-preview-paragraph{
     text-align: center;
 }
@@ -146,7 +149,6 @@ h1{
     flex-wrap: nowrap;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 50px;
 }
 #portfolio-preview img{
     width: 200px;
