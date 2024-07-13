@@ -21,18 +21,18 @@
         <nav class="navbar">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="pastprojects.html">Past Projects</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </div>
 
     <main>
-        <div id="intro-container">
+        <div class="section-container">
 
-            <div id="paragraph-container">
-                <div id="paragraph-title">I create the website<br>You focus on your business</div><hr>
-                <div id="paragraph">Whether you're just starting your business or want to propel your current one to greater heights, I will be sure to increase your online presence in a world that is getting more and more digitalized.</div>
+            <div class="paragraph-container">
+                <div class="paragraph-title" id="slogan">I create the website<br>So you can focus on your business</div><hr>
+                <div class="paragraph">Whether you're just starting your business or want to propel your current one to greater heights, I will be sure to increase your online presence in a world that is getting more and more digitalized.</div>
             </div>
 
             <a href="http://www.freepik.com" id="link">Designed by brgfx / Freepik</a>
@@ -40,6 +40,39 @@
 
             <div id="hi"></div>
         </div>
+
+        <div class="section-container" id="aboutme-container">
+
+            <div class="paragraph-container">
+                <div class="paragraph-title">About Me</div><hr>
+                <div class="paragraph">
+                    <ul>
+                        <li>Proficient in three coding languages: HTML, CSS, and Python</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="section-container">
+            <div class="paragraph-container">
+                <div class="paragraph-title">Take a look at my portfolio!</div><hr>
+                <div class="paragraph" id="portfolio-preview-paragraph">Get a feel for my style and past designs.</div>
+                <button onclick="window.location.href='portfolio.html';" class="button" id="closer-look">Take a closer look</button>
+            </div>
+            <div id="portfolio-preview">
+                <img src="images/snakegame.PNG">
+                <img src="images/guessinggame.PNG">
+            </div>
+        </div>
+
+        <div class="section-container" id="interested-container">
+            <div id="interested-button-container">
+                <div class="paragraph-title" id="interested">Interested?</div>
+                <button onclick="window.location.href='contact.html';" class="button">Contact Me</button>
+            </div>
+        </div>
+
     </main>
 
     <footer id="container-bottom">

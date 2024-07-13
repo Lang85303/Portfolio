@@ -88,12 +88,15 @@ h1{
     margin-left: 100px;
     margin-right: 50px;
 }
-#intro-container{
+.section-container{
     display: flex;
     padding: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
 }
 @media screen and (max-width:1000px){
-    #intro-container{
+    .section-container{
         flex-wrap: wrap;
         justify-content: center;
     }
@@ -105,22 +108,75 @@ h1{
         margin-right: 0px;
     }
 }
-#paragraph-container{
+.paragraph-container{
     flex-wrap: wrap;
 }
-#paragraph-title{
-    font-size: 3.5em;
+.paragraph-title{
+    font-size: 3em;
     margin-bottom: 25px;
 }
-#paragraph{
+#slogan{
+    font-size: 4em;
+}
+.paragraph{
     font-size: 1.5em;
     padding-top: 25px;
+    margin-bottom: 15px;
 }
-
 #link{
     display: none;
     visibility: none;
     pointer-events: none;
+}
+#aboutme-container{
+    padding-top: 0;
+}
+#aboutme-container .paragraph-title{
+    text-align: right;
+}
+#portfolio-preview-paragraph{
+    text-align: center;
+}
+#closer-look{
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+#portfolio-preview{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+}
+#portfolio-preview img{
+    width: 200px;
+    height: 200px;
+}
+#interested-container{
+    padding-top: 0;
+    justify-content: center;
+}
+#interested-button-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.button{
+    display: flex;
+    padding: 10px 20px;
+    background-color: hsl(0, 0%, 20%);
+    color: #ffe2cc;
+    font-size: 1.3em;
+    border-radius: 25px;
+    border: 1px solid hsl(0, 0%, 30%);
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+.button:hover{
+    background-color: hsl(0, 0%, 30%);
 }
 
 /* PAST PROJECTS */
@@ -187,8 +243,8 @@ h3{
 #container-bottom{
     background-color: hsl(0, 0%, 10%);
     position: sticky;
-    top: 0;
-    padding-top: 5px;
+    margin-top: 20px;
+    padding: 5px;
     z-index: 1000;
     text-align: center;
 }
