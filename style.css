@@ -122,6 +122,8 @@ h1{
     font-size: 1.5em;
     padding-top: 25px;
     margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
 }
 #link{
     display: none;
@@ -177,7 +179,7 @@ h1{
 #port-container-container{
     padding-top: 0px;
 }
-#port-container{
+.port-container{
     background-color: hsl(0, 0%, 20%);
     border: 1px solid hsl(0, 0%, 30%);
     border-radius: 25px;
@@ -187,6 +189,8 @@ h1{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: auto;
+    height: auto;
 }
 .project-container{
     margin-top: auto;
@@ -204,6 +208,36 @@ h1{
 }
 .project:hover{
     padding: 0;
+}
+
+/* SNAKE GAME */
+
+#individual-port-container{
+    flex-wrap: nowrap;
+    height: 220px;
+    margin: auto;
+    margin-left: 50px;
+}
+#individual-project-container{
+    margin: 0px;
+    width: 200px;
+    height: 200px;
+}
+#individual-project:hover{
+    padding: 10px;
+}
+@media screen and (max-width:1000px){
+    #individual-port-container{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width:645px){
+    #individual-port-container{
+        flex-wrap: wrap;
+        height: auto;
+    }
 }
 
 /* CONTACT */
