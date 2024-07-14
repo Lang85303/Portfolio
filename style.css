@@ -134,25 +134,12 @@ h1{
 #aboutme-container .paragraph-title{
     text-align: right;
 }
-#all-port-preview{
-    padding-right: 0;
-}
 #portfolio-preview-paragraph{
     text-align: center;
 }
 #closer-look{
     margin-top: 5px;
     margin-bottom: 15px;
-}
-#portfolio-preview{
-    display: flex;
-    flex-wrap: nowrap;
-    margin-left: auto;
-    margin-right: auto;
-}
-#portfolio-preview img{
-    width: 200px;
-    height: 200px;
 }
 #interested-container{
     padding-top: 0;
@@ -181,74 +168,28 @@ h1{
     background-color: hsl(0, 0%, 30%);
 }
 
-/* PAST PROJECTS */
+/*  PORTFOLIO */
 
-.container-project{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    height: auto;
-    padding-top: 30px;
-}
-#past-projects{
-    font-size: 3em;
-    margin: 0;
-}
-#projects{
+#port-container{
     background-color: hsl(0, 0%, 10%);
     border: 1px solid hsl(0, 0%, 30%);
     border-radius: 25px;
-    margin: 30px auto;
-    width: calc(100% - 60px);
-    height: 1000px;
+    margin: 30px;
     padding: 10px;
-}
-.gallery{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    float: left;
-
 }
-.projectimg{
-    width: 100%;
-    height: 100%;
+.project-label{
+    font-size: 1.5em;
+    text-align: center;
+}
+.project{
+    width: 200px;
+    height: 200px;
     padding: 10px;
     border-radius: 25px;
 }
-.projectimg:hover{
-    padding: 0px;
-}
-.hover-label{
-    position: absolute;
-    z-index: 999;
-    background-color: hsl(0, 0%, 70%);
-    color: hsl(0, 0%, 0%);
-    padding: 5px;
-    border-radius: 3px;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.2s, visibility 0.2s;
-}
-.gallery:hover .hover-label{
-    opacity: 1;
-    visibility: visible;
-}
-h3{
-    text-align: center;
-    font-size: 3em;
-    margin: 30px;
-}
-#container-bottom{
-    background-color: hsl(0, 0%, 10%);
-    position: sticky;
-    margin-top: 20px;
-    padding: 5px;
-    z-index: 1000;
-    text-align: center;
+.project:hover{
+    padding: 0;
 }
 
 /* CONTACT */
