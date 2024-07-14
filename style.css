@@ -230,7 +230,7 @@ h1{
     #individual-port-container{
         margin-left: auto;
         margin-right: auto;
-        margin-top: 50px;
+        margin-top: 30px;
     }
 }
 @media screen and (max-width:645px){
@@ -238,6 +238,17 @@ h1{
         flex-wrap: wrap;
         height: auto;
     }
+}
+#port-li-container{
+    padding-top: 0;
+    margin-bottom: 10px;
+}
+ul{
+    margin-left: auto;
+    margin-right: auto;
+}
+.port-li{
+    font-size: 1.5em;
 }
 
 /* CONTACT */
