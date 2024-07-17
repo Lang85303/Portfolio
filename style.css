@@ -87,6 +87,8 @@ h1{
     height: 325px;
     margin-left: 100px;
     margin-right: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 .section-container{
     display: flex;
@@ -115,8 +117,16 @@ h1{
     font-size: 3em;
     margin-bottom: 25px;
 }
+#slogan-container{
+    margin-top: auto;
+    margin-bottom: auto;
+}
 #slogan{
     font-size: 4em;
+}
+#firsthr{
+    margin-left: 50px;
+    margin-right: 50px;
 }
 .paragraph{
     font-size: 1.5em;
@@ -129,12 +139,6 @@ h1{
     display: none;
     visibility: none;
     pointer-events: none;
-}
-#aboutme-container{
-    padding-top: 0;
-}
-#aboutme-container .paragraph-title{
-    text-align: right;
 }
 #portfolio-preview-paragraph{
     display: flex;
