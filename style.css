@@ -12,8 +12,8 @@ body{
 }
 main{
     background-image:
-        linear-gradient(hsl(278, 18%, 21%) 1px, transparent 1px),
-        linear-gradient(90deg, hsl(278, 18%, 21%) 1px, transparent 1px);
+        linear-gradient(hsl(283, 20%, 20%) 1px, transparent 1px),
+        linear-gradient(90deg, hsl(283, 20%, 20%) 1px, transparent 1px);
     background-size: 75px 75px;    
 }
 #container-top{
@@ -85,7 +85,7 @@ h1{
 #cartooncomputer{
     width: 325px;
     height: 325px;
-    margin-left: 100px;
+    margin-left: 50px;
     margin-right: 50px;
     margin-top: auto;
     margin-bottom: auto;
@@ -127,6 +127,10 @@ h1{
 #firsthr{
     margin-left: 50px;
     margin-right: 50px;
+}
+#persuasive-paragraph{
+    margin: 0;
+    text-align: center;
 }
 .paragraph{
     font-size: 1.5em;
