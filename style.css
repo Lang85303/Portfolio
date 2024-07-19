@@ -142,8 +142,8 @@ hr{
 }
 .paragraph{
     font-size: 1.5em;
-    margin-top: 25px;
-    margin-bottom: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -161,7 +161,6 @@ hr{
     margin-bottom: 15px;
 }
 #interested-container{
-    padding-top: 0;
     justify-content: center;
 }
 #interested-button-container{
@@ -187,7 +186,7 @@ hr{
     background-color: hsl(280, 20%, 30%);
 }
 #diagram-container{
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .individual-diagram-container{
     background-color: hsl(280, 5%, 20%);
@@ -222,6 +221,11 @@ hr{
     padding-left: 15px;
     font-size: 1.3em;
     width: 500px;
+}
+@media screen and (max-width:1000px){
+    #existing-website{
+        margin-top: 60px;
+    }
 }
 
 /*  PORTFOLIO */
@@ -306,5 +310,21 @@ ul{
 }
 
 /* CONTACT */
+
+#contact-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact-paragraph-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#reply{
+    margin-top: 0;
+}
 
 /* MOBILE SETTINGS */
