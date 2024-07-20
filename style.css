@@ -48,7 +48,7 @@ h1{
     margin-right: 20px;
 }
 .navbar ul{
-    background-color: hsl(280, 20%, 20%);
+    background-color: hsl(280, 40%, 20%);
     border: 1px solid hsl(280, 20%, 30%);
     list-style-type: none;
     padding: 0px;
@@ -70,7 +70,7 @@ h1{
     text-align: center;
 }
 .navbar a:hover{
-    background-color: hsl(280, 20%, 30%);
+    background-color: hsl(280, 40%, 30%);
 }
 #container-bottom{
     background-color: hsl(0, 0%, 10%);
@@ -83,7 +83,7 @@ h1{
 
 /* HOME */
 
-#cartooncomputer{
+.img{
     width: 325px;
     height: 325px;
     margin-left: 50px;
@@ -152,9 +152,23 @@ hr{
     visibility: none;
     pointer-events: none;
 }
+#portfolio-preview-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #portfolio-preview-paragraph{
     display: flex;
     justify-content: center;
+}
+#suitcase{
+    margin-left: 100px;
+}
+@media screen and (max-width:1000px){
+    #suitcase{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
 }
 #closer-look{
     margin-top: 5px;
@@ -193,6 +207,7 @@ hr{
     border: 1px solid hsl(280, 20%, 30%);
     border-radius: 25px;
     padding: 15px;
+    width: 45%;
 }
 .yes-no-website{
     font-size: 2em;
@@ -222,9 +237,15 @@ hr{
     font-size: 1.3em;
     width: 500px;
 }
-@media screen and (max-width:1000px){
+
+@media screen and (max-width:700px){
     #existing-website{
         margin-top: 60px;
+    }
+}
+@media screen and (max-width:700px){
+    .individual-diagram-container{
+        width: 100%;
     }
 }
 
