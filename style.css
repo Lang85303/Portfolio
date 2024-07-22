@@ -152,7 +152,7 @@ hr{
     visibility: none;
     pointer-events: none;
 }
-#portfolio-preview-container{
+#center-items{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -246,6 +246,23 @@ hr{
 @media screen and (max-width:700px){
     .individual-diagram-container{
         width: 100%;
+    }
+}
+.about-me-img{
+    width: 300px;
+    height: auto;
+    margin-left: 50px;
+    margin-right: 100px;
+    margin-top: auto;
+    margin-bottom: auto;
+    border: 2px solid hsl(280, 75%, 50%);
+    border-radius: 25px;
+}
+@media screen and (max-width:1000px){
+    .about-me-img{
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 30px;
     }
 }
 
