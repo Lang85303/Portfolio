@@ -135,7 +135,17 @@ h1{
     margin-bottom: auto;
 }
 #slogan{
-    font-size: 4em;
+    font-size: max(4em, 4vw);
+}
+@media screen and (max-width:671px){
+    #slogan{
+        font-size: 3.5em;
+    }
+}
+@media screen and (max-width:602px){
+    #slogan{
+        font-size: 3em;
+    }
 }
 span{
     color: hsl(280, 75%, 65%);
