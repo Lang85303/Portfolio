@@ -91,6 +91,10 @@ h1{
     z-index: 1000;
     text-align: center;
 }
+.no-decor{
+    color:#ffe2cc;
+    text-decoration: none;
+}
 
 /* HOME */
 
