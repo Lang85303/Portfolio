@@ -159,8 +159,17 @@ hr{
     margin-right: 50px;
 }
 #persuasive-paragraph{
-    margin: 0;
+    display: flexbox;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 0px;
     text-align: center;
+    font-size: 18px;
+}
+#persuasive-paragraph-text{
+    line-height: 1.5;
 }
 .paragraph{
     font-size: 1.5em;
@@ -244,16 +253,17 @@ hr{
     padding-bottom: 5px;
 }
 .number{
-    padding: 15px;
+    padding: 14px;
     color: black;
     background-color: hsl(280, 100%, 80%);
     border: 2px solid hsl(280, 50%, 40%);
     border-radius: 25px;
     height: 50px;
     width: 50px;
-    font-size: 1.5em;
+    font-size: 1.7em;
     text-align: center;
     line-height: 20px;
+    font-weight: bold;
 }
 .number-explanation{
     padding-left: 15px;
